@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, no-serif; 
+}
+
+html {
+  display: flex;
+  flex-direction: column; /* correction bug IE de min-height non appliqué à body */
+}
+
+body {
+  	width: 980px;
+	margin: auto;
+	display: flex; /* crée un contexte flex pour ses enfants */
+	flex-direction: row; /* affichage vertical */
+	min-height: 100vh; /* toute la hauteur du viewport */
+	color: #333;
+}
+
+aside {
+	width: 180px;
+}
+
+main {
+	flex: 1;
+}
+
+header {
+	flex: 1;
+	background: #ddd;
+	padding: 15px 10px;
+	font-size: 12px;
+}
+
+nav {
+	display: flex;
+	flex-flow: row;
+}
+
+nav div {
+	flex: 1;
+	text-align: center;
+}
+
+nav div:nth-child(1) {
+	background: #97C300;
+}
+
+nav div:nth-child(2) {
+	background: #00ADC1;
+}
+
+nav div:nth-child(3) {
+	background: #FF7437;
+}
+
+nav div:nth-child(4) {
+	background: #994DD1;
+}
+
+nav div:nth-child(5) {
+	background: #E1001A;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+}
+
+.wrapper {
+  flex: 1 1 auto; /* occupe la hauteur restante */
+}
+
+.wrapper > div.content {
+	flex: 1;
+	padding: 10px 0;
+}
+
+h1 {
+	color: #E1001A;
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: 5px;
+}
+
+p {
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+footer {
+	height: 30px;
+	background: #444;
+	padding: 10px;
+}

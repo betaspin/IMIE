@@ -1,0 +1,1 @@
+enrichir l'achitecture d'un model objet DTO

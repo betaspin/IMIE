@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Positionnement</title>
+<link rel="stylesheet" type="text/css" href="positionnement.css">
+</head>
+<body>
+	<h1>Block</h1>
+	<div id="conteneur_block" class="conteneur">
+		<div class="orange">Eléments se positionnent les uns sous les autres</div>
+		<div class="blue">Height et Width possibles</div>
+		<div class="green">Par défaut font la largeur de leur conteneur</div>
+	</div>
+	<h1>Inline</h1>
+	<div id="conteneur_inline" class="conteneur">
+		<div class="orange">Eléments les uns à la suite des autres tant qu'il y a de la place.</div>
+		<div class="blue">Height et Width aucun effet.</div>
+		<div class="green">font la largeur et la hauteur de leur contenu.</div>
+	</div>
+	<h1>InlineBlock</h1>
+	<div id="conteneur_inlineblock" class="conteneur">
+		<div class="orange">Mélange des 2.</div>
+		<div class="blue">aaaaaaaaaaaaaaaaaaaaaaaa</div>
+		<div class="green">bbbaaaaaaaaaaaaaaaaaaaa</div>
+	</div>
+	<h1>Flex</h1>
+	<div id="conteneur_flex" class="conteneur">
+		<div class="orange">Flex-direction: [row | column]</div>
+		<div class="blue">https://demo.agektmr.com/flexbox/</div>
+		<div class="green">http://flexboxfroggy.com/</div>
+	</div>
+	<h1>Float left</h1>
+	<div id="conteneur_floatl" class="conteneur">
+		<div class="floatl orange">F1</div>
+		<div class="floatl blue">F2</div>
+		<div class="floatl green">F3</div>
+		<div class="clear"></div>
+	</div>
+	
+	<h1>Float right</h1>
+	<div id="conteneur_floatr" class="conteneur">
+		<div class="floatr orange">F1</div>
+		<div class="floatr blue">F2</div>
+		<div class="floatr green">F3</div>
+		<div class="clear"></div>
+	</div>
+	
+	<h1>Positionnement Static</h1>
+	<div id="conteneur_static">
+		<div>par défaut(non positionné)</div>
+	</div>
+	
+	<h1>Positionnement Relative</h1>
+	<div id="conteneur_relative">
+		<div>se positionne par rapport à sa position initiale</div>
+	</div>
+	
+	<h1>Positionnement Absolute</h1>
+	<div id="conteneur_absolute">
+		<div>se positionne par rapport au parent le plus proche qui est positionné (non static !!!). Si pas de position donnée elle reste en place mais erreur de présentation.</div>
+	</div>
+	
+	<br/>
+	
+	<h1>Positionnement Fixed</h1>
+	<div id="conteneur_fixed">
+		<div>se positionne par rapport à la fenêtre du navigateur(viewport). Toujours visible.</div>
+	</div>
+	
+	<h1>Display Table - Table-Row - Table-Cell</h1>
+	<div id="conteneur_table">
+		<div class="table">
+			<div class="cell1">Le texte peut être centré verticalement</div>
+			<div class="cell2">Les hauteurs de cellules s'alignent sur la plus grande des cellules</div>
+		</div>
+	</div>
+</body>
+</html>

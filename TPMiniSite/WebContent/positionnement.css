@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+.conteneur div:not(.clear){
+	width: 300px;
+	height: 100px;
+}
+
+.orange{
+	background-color: #fcaf3e;
+}
+
+.blue{
+	background-color: #729fcf;
+}
+
+.green{
+	background-color: #8ae234;
+}
+
+#conteneur_block div{
+	display: block;
+}
+
+#conteneur_inline div{
+	display: inline;
+}
+
+#conteneur_inlineblock{
+	display: inline-block;
+	font-size: 0;
+}
+
+#conteneur_inlineblock div{
+	display: inline-block;
+	font-size: 16px;
+}
+
+#conteneur_flex{
+	display: flex;
+}
+
+#conteneur_flex div{
+
+}
+
+#conteneur_floatl, #conteneur_floatr{
+	background-color: #fce94f;
+}
+
+.floatl{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.floatr{
+	width: 50px;
+	height: 50px;
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+#conteneur_static div{
+	position: static;
+	left: 50px;
+}
+
+#conteneur_relative div{
+	position: relative;
+	left: 150px;
+}
+
+#conteneur_absolute div{
+	position: absolute;
+	left: 150px;
+	/*top: 10px;*/
+}
+
+#conteneur_fixed div{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+
+#conteneur_table .table {
+	display: table;
+	width: 100%;
+	border-spacing: 10px;
+}
+
+#conteneur_table .cell1 {
+	display: table-cell;
+	height: 100px;
+	border: 1px solid #444;
+	/*vertical-align: middle;*/	
+}
+
+#conteneur_table .cell2 {
+	display: table-cell;
+	height: 50px;
+	border: 1px solid #444;
+}
