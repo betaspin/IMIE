@@ -1,0 +1,217 @@
+@CHARSET "UTF-8";
+/*https://www.toptal.com/designers/subtlepatterns*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-familly: arial, no-serif;
+	color: #666;
+	/*background-image: url(fond.png);*/
+	background-image: url(images/fond14.png);
+}
+
+main{
+	width: 980px;
+	margin: auto;
+	position: relative;
+	background-color: #fff;
+}
+
+header{
+	/*height: 100px;*/
+	display: flex;
+	padding: 10px;
+	font-size: 12px;
+}
+
+header div{
+	margin-right: 40px;
+}
+
+div.trombin{	
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+div.trombin img{
+	width: 100px;
+}
+
+nav{
+	background-color: #3594B4;
+	color: #fff;
+	padding: 10px;
+}
+
+nav h1{
+	font-size: 30px;
+}
+
+nav span{
+	font-size: 12px;
+}
+
+wrapper{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+h2{
+	font-style: italic;
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+h3{
+	font-size: 14px;
+	color: #3594B4;
+	margin-bottom: 5px;
+}
+
+aside{
+	background-color: #CCE4EC;
+	min-width: 230px;
+	max-width: 230px;
+	padding: 10px;	
+	font-size: 12px;
+	flex: 0 1 auto;
+	align-self: stretch;
+}
+
+.skill{
+	margin-bottom: 20px;
+}
+
+.skill .stars{
+	display: flex;
+}
+
+.skill .stars div:nth-child(1){
+	flex: 0 1 auto;
+	width: 150px;
+}
+
+.skill .stars div:nth-child(2){
+	flex: 1 1 auto;
+}
+
+.legend{
+	font-size: 12px;
+}
+
+.legend .stars{
+	display: flex;
+}
+
+.legend .stars div:nth-child(1){
+	flex: 0 1 auto;
+	width: 80px;
+}
+
+.legend .stars div:nth-child(2){
+	flex: 1 1 auto;
+}
+
+
+.grey-star{
+	color: #bbb;
+}
+
+content{
+	flex: 1 1 auto;
+	self-align: stretch;
+	padding: 10px;
+}
+
+content div.job{
+	margin-bottom: 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+content .school h3{
+	margin-bottom: 0;
+}
+
+content div.school{
+	font-size: 14px;
+}
+
+@media (max-width: 980px), (max-device-width: 980px){
+	main{
+		width: 100%;
+		position: relative;
+	}
+	
+	nav h1{
+		font-size: 25px;
+	}
+	
+	wrapper{
+		flex-direction: column;
+	}
+	aside{
+		/*min-width: 100%;*/
+		max-width: 100%;
+		flex: 1 1 auto;
+	}
+	.skill-flex{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-over;
+	}
+	.skill .stars{
+		margin-right: 30px;
+	}
+	div.trombin{		
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+	div.trombin img{	
+		width: 68px;
+	}
+}
+
+@media (max-width: 768px), (max-device-width: 768px){
+	
+	nav h1{
+		font-size: 20px;
+	}
+	
+	wrapper{
+		flex-flow: column nowrap;
+	}
+}
+
+@media (max-width: 450px), (max-device-width: 450px){
+	nav h1{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 14px;
+	}
+	h3{
+		font-size: 13px;
+	}
+	header{
+		/*justify-content: space-around;*/
+	}
+	header div{
+		flex: 1;		
+		margin:0;
+	}
+	div.trombin{
+		position: static;
+		padding-top: 10px;
+		text-align: center;
+	}
+	content div.job, content div.school{
+		font-size: 13px;
+	}
+}
+

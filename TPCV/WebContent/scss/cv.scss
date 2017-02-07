@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'mixins';
+
+
+/**********************************/
+$couleur_principale: #98FFC2;
+$largeur_element_menu: percentage(1/7);
+
+#menu li{
+	width: $largeur_element_menu;
+}
+
+#paragraphes{
+	background-color: $couleur_principale;
+	p{
+		color: white;
+	}
+}
+
+
+
+/*****************************/
+@mixin carre{$color, $taille){
+	background-color: $color;
+	width: $taille;
+	height: $taille;
+}
+
+.bloc_carre{
+	@include carre(#1FFCE2, 50px);
+}
+
+.bloc_carre{
+	@include carre($couleur_principale, 20px);
+}
+/*****************************/
+
+@mixin forme($color, $taille, $forme, $color_p){
+	backgroun-color: $color;
+	width: $taille;
+	height: $aille;
+	
+	@if $forme == "rond"{
+		border-radius: 50%;
+	}
+
+	& p{
+		color: $color_p;	
+	}
+	/* & = l'élément sur lequel on include la mixin */
+}
+
+.bloc{
+	@include forme(red, 50px, "Circle", white);
+	float: left;
+	@media (max-width: 600px), (max-device-width: 600px){
+		float: right;	
+	}
+}
+
+.ronds{
+	@extends .bloc; /* copie .bloc */
+	color: blue;	
+}
