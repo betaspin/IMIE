@@ -14,7 +14,7 @@ public abstract class ADAO<T> implements IDAO<T> {
 		try {
 			// lecture du fichier jdbc.properties
 			Properties p = new Properties();
-			p.load(getClass().getResourceAsStream("/jdbc.properties"));
+			p.load(getClass().getResourceAsStream("jdbc.properties"));
 			String driver = p.getProperty("driver");
 			String url = p.getProperty("url");
 			String user = p.getProperty("user");

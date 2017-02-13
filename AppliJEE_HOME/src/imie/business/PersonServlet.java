@@ -7,17 +7,42 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/PersonServlet")
+import imie.model.Person;
+import imie.persistence.PersonDAO;
+
+@WebServlet("/person")
 public class PersonServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String path = request.getPathInfo();
+		if (path == null) {
+			
+		} else if (path.matches("/save.*")) {
+			Person person = new Person();
+			person.setFirstname(request.getParameter("firstname"));
+			person.setFirstname(request.getParameter("lastname"));
+			if (request.getParameter("id") != null && request.getParameter("id").isEmpty() == false) {
+				person.setId(Integer.parseInt(request.getParameter("id")));
+				new PersonDAO().update(person);
+			} else {
+				new PersonDAO().insert(person);
+			}
+		} else if (path.matches("/delete.*")) {
+			Person person = new Person();
+			person.setId(Integer.parseInt(request.getParameter("id")));
+			new PersonDAO().delete(person);
+		} else if (path.matches("/select.*")) {
+			Person person = new Person();
+			person.setId(Integer.parseInt(request.getParameter("id")));
+			Person data = new PersonDAO().findOne(person);
+			request.setAttribute("data", data);
+		}
+		request.setAttribute("list", new PersonDAO().findAll());
+		request.getRequestDispatcher("/person.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }
