@@ -1,11 +1,11 @@
 package imie.model;
 
-public class PersonDTO {
+public class Person {
 	private Integer id;
 	private String firstname;
 	private String lastname;
 	
-	public PersonDTO(){
+	public Person(){
 		
 	}
 
