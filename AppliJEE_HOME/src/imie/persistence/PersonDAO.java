@@ -14,7 +14,7 @@ public class PersonDAO extends ADAO<Person>{
 	@Override
 	public List<Person> findAll() {
 		
-		String sql = "SELECT id, firstname, lastname FROM person";
+		String sql = "SELECT id, firstname, lastname FROM person ORDER BY id";
 				
 		try (Connection connection = getConnection();
 				PreparedStatement statement = connection.prepareStatement(sql);
