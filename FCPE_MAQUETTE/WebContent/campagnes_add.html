@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FCPE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">FCPE</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Mon compte</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Préférences</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Déconnexion</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home fa-fw"></i> Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Campagnes<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="campagnes_list.html">Liste des campagnes</a>
+                                </li>
+                                <li>
+                                    <a href="campagnes_add.html">Créer une campagne</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-edit fa-fw"></i> Formulaires<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="formulaires_list.html">Liste des formulaires</a>
+                                </li>
+                                <li>
+                                    <a href="formulaires_add.html">Créer un formulaire</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-question-circle-o fa-fw"></i> Questions<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="questions_list.html">Liste des questions</a>
+                                </li>
+                                <li>
+                                    <a href="questions_add.html">Créer une question</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-institution fa-fw"></i> Etablissements<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="etablissements_list.html">Liste des établissement</a>
+                                </li>
+                                <li>
+                                    <a href="etablissements_add.html">Créer un établissement</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Classes<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="classes_list.html">Liste des classes</a>
+                                </li>
+                                <li>
+                                    <a href="classes_add.html">Créer une classe</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Elèves<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="eleves_list.html">Liste des élèves</a>
+                                </li>
+                                <li>
+                                    <a href="eleves_add.html">Créer un élève</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user-secret fa-fw"></i> Administrateurs<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="administrateurs_list.html">Liste des administrateurs</a>
+                                </li>
+                                <li>
+                                    <a href="administrateurs_add.html">Créer un administrateur</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="campagnes_list.html">Campagnes</a></li>
+                    <li class="active">Créer une campagne</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Créer une campagne</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="row">
+                <form>
+                  <div class="col-lg-12 form-group">
+                    <label for="campagne">Nom</label>
+                    <input type="text" class="form-control" id="campagne" placeholder="Nom de la campagne">
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label for="etablissement">Etablissement</label>
+                    <select class="form-control" id="etablissement">
+                        <option>Sélectionnez un établissement</option>
+                        <option>Etab1</option>
+                        <option>Etab2</option>
+                        <option>Etab3</option>
+                        <option>Etab4</option>
+                        <option>Etab5</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label for="classe">Classe</label>
+                    <select class="form-control" id="classe">
+                        <option>Sélectionnez une classe</option>
+                        <option>Classe1</option>
+                        <option>Classe2</option>
+                        <option>Classe3</option>
+                        <option>Classe4</option>
+                        <option>Classe5</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="trimestre">Trimestre</label>
+                    <br/>
+                    <label class="radio-inline">
+                        <input type="radio" name="trimestre" id="trimestre" value="1" aria-label="..."> T1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="trimestre" id="trimestre" value="1" aria-label="..."> T2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="trimestre" id="trimestre" value="1" aria-label="..."> T3
+                    </label>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label class="control-label" for="inputGroupSuccess1">Date du conseil de classe</label>
+                    <div class="input-group">                        
+                      <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                      <span class="input-group-addon"><span class="fa fa-calendar-o fa-fw"></span></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label class="control-label" for="inputGroupSuccess1">Date de début de la campagne</label>
+                    <div class="input-group">                        
+                      <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                      <span class="input-group-addon"><span class="fa fa-calendar-o fa-fw"></span></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label class="control-label" for="inputGroupSuccess1">Date de fin de la campagne</label>
+                    <div class="input-group">                        
+                      <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                      <span class="input-group-addon"><span class="fa fa-calendar-o fa-fw"></span></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 form-group">
+                    <label for="formulaire">Formulaire</label>
+                    <select class="form-control" id="formulaire">
+                        <option>Sélectionnez un formulaire</option>
+                        <option>Form1</option>
+                        <option>Form2</option>
+                        <option>Form3</option>
+                        <option>Form4</option>
+                        <option>Form5</option>
+                    </select>
+                  </div>
+                    <div class="clearfix"></div>
+                   <br/>
+                  <div class="col-lg-12">
+                    <a class="btn btn-info" href="campagnes_list.html" role="button">Annuler</a>
+                    <button type="submit" class="btn btn-info">Prévisualiser le formulaire</button>
+                    <button type="submit" class="btn btn-info">Lancer la campagne</button>
+                    <button type="submit" class="btn btn-success">Sauvegarder la campagne</button>
+                  </div>
+                </form>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

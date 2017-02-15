@@ -22,13 +22,13 @@
 <div id="container" class="container-fluid">
 	<h2>Formulaire d'ajout/modification</h2>
 	<div class="col-sm-4">
-		<form action="${url}/save" method="post">
+		<form action="${url}/save" method="post" class="form-inline">
 			<div class="form-group">
-				<label for="firstname">Prénom</label><br/>
+				<label for="firstname">Prénom</label>
 				<input type="text" name="firstname" value="${data.firstname}" />
 			</div>
 			<div class="form-group">
-				<label for="lastname">Nom</label><br/>
+				<label for="lastname">Nom</label>
 				<input type="text" name="lastname" value="${data.lastname}" />
 			</div>
 			<input type="hidden" name="id" value="${data.id}" />
